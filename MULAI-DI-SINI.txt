@@ -1,0 +1,22 @@
+SIP-SALAMAN — PAKET FINAL GITHUB PAGES
+
+1. Ekstrak ZIP ini.
+2. Buka folder hasil ekstrak. Pastikan index.html, login.html, peta.html,
+   olah_spasial.html, auth.js, config.js, dan .nojekyll berada satu tingkat.
+3. Buka config.js. Isi SUPABASE_URL dan SUPABASE_ANON_KEY dengan nilai
+   project Supabase SIP-SALAMAN. Jangan gunakan service_role/secret key.
+4. Pastikan GEOSERVER_WMS_URL adalah URL WMS publik yang masih aktif.
+5. Upload ISI folder ini langsung ke root repository GitHub baru.
+   Jangan upload folder pembungkus SIP_Salaman_GitHubPages sebagai subfolder.
+6. Di GitHub: Settings > Pages > Deploy from a branch > main > /(root) > Save.
+7. Di Supabase Authentication > URL Configuration, perbarui Site URL dan
+   Redirect URLs agar menggunakan URL GitHub Pages repository BARU.
+8. Uji login, registrasi, dashboard, dan peta dari perangkat lain.
+
+PENTING:
+- GitHub Pages hanya meng-host file statis.
+- GeoServer harus dapat diakses publik melalui URL HTTPS dan server/tunnel
+  harus tetap aktif.
+- Jika WMS dapat dibuka sebagai XML GetCapabilities, itu hanya membuktikan
+  endpoint merespons; belum otomatis membuktikan tile WMS tampil pada peta.
+- Jika peta masih kosong, cek Console (F12) dan Network pada browser.
